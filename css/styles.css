@@ -1,0 +1,273 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+:root {
+  --accent-color: #ff6c00;
+  --primary-text-color: #555555;
+  --secondary-text-color: #9da4bd;
+  --title-primary: #303030;
+  --title-secondary: #ffffff;
+  --primary-ff: 'Open Sans', sans-serif;
+  --secondary-ff: 'Raleway', sans-serif;
+}
+
+body {
+  font-family: var(--primary-ff);
+  color: var(--primary-text-color);
+  font-size: 18px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* btn  */
+
+.main-btn {
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--accent-color);
+}
+
+/* Header */
+.page-header {
+  background-color: #191c26;
+}
+.site-nav-link,
+.header-contact {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+.primary-btn {
+  color: #ffffff;
+}
+
+.site-nav-link:hover,
+.header-contact:hover,
+.site-nav-link:focus,
+.header-contact:focus {
+  color: var(--accent-color);
+}
+
+/* section  */
+.section-suptitle {
+  color: var(--title-primary);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: var(--secondary-ff);
+  color: var(--title-primary);
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.section-subtitle {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* Section hero  */
+.hero {
+  background-color: #191c26;
+}
+.hero-social-link {
+  color: #303030;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.hero-social-link:hover,
+.hero-social-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-suptitle {
+  color: rgba(157, 164, 189, 0.6);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  color: var(--title-secondary);
+  font-family: var(--secondary-ff);
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+}
+
+.hero-subtitle {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* Section about  */
+
+.about-text {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+.secondary-btn {
+  color: #303030;
+}
+
+.secondary-btn:hover,
+.secondary-btn:focus {
+  color: #ffffff;
+}
+
+/* section price  */
+
+.price {
+  background-color: #191c26;
+}
+
+.price-suptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.price-title {
+  color: #ffffff;
+}
+
+.price-description {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* section features  */
+
+.features-number {
+  color: #303030;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+.features-text {
+  color: #303030;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+}
+
+/* section masters  */
+
+.masters-card-title {
+  color: var(--title-primary);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+}
+
+.masters-card-description {
+  color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+}
+
+/* section online-rec  */
+
+.online-rec {
+  background-color: #191c26;
+}
+
+.online-rec-title {
+  color: var(--title-secondary);
+}
+
+/* section contacts  */
+
+.contacts {
+  background-color: #191c26;
+}
+
+.contacts-title {
+  color: var(--title-secondary);
+}
+
+.contacts-link {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.contacts-mail {
+  text-decoration: underline;
+}
+
+.contacts-suptitle {
+  color: var(--title-secondary);
+}
+
+.contacts-description {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+/* page footer  */
+
+.copyright,
+.footer-social {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.copyright {
+  color: var(--secondary-text-color);
+}
+.footer-social {
+  color: #303030;
+}
