@@ -184,6 +184,8 @@ img {
   display: flex;
 }
 
+/* ================================???????????????======================================== */
+
 .hero-social-list {
   display: flex;
   flex-direction: column-reverse;
@@ -200,6 +202,8 @@ img {
 .hero-social-item:not(:last-child) {
   margin-top: 86px;
 }
+
+/* ======================================================================================== */
 
 .hero-social-link {
   color: #303030;
@@ -373,6 +377,8 @@ img {
   align-items: flex-start;
 }
 
+/* ================================???????????????======================================== */
+
 .reason-list {
   display: flex;
   flex-wrap: wrap;
@@ -403,6 +409,8 @@ img {
 .reason-item:nth-child(3) {
   margin-top: -30px;
 }
+
+/* ======================================================================================== */
 
 .reason-digit {
   margin-bottom: 6px;
@@ -483,9 +491,12 @@ img {
   flex-basis: calc(100% / 4 - 30px);
   margin: 15px;
 }
+
+/* ================================???????????????======================================== */
+
 /* section registration 
 ===========================================*/
-.registration-contacts-wraper {
+.registration-contacts-wrapper {
   background-color: #191c26;
 }
 
@@ -526,7 +537,7 @@ img {
 .contacts-list {
   margin-bottom: 70px;
 }
-.contacts-item {
+.contacts-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
