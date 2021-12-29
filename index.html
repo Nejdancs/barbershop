@@ -20,7 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="stylesheet" href="./css/slider.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -86,12 +86,59 @@
           </div>
 
           <div class="hero-main">
-            <p class="hero-suptitle">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
-            <p class="hero-subtitle">
-              Мы эксперты в модных мужских стрижках.<br />
-              Работаем быстро, осторожно и со вкусом.
-            </p>
+            <div class="slider">
+              <div class="slider__wrapper">
+                <div class="slider__items">
+                  <div class="slider__item">
+                    <img
+                      class="slider__img"
+                      src="./images/hero.jpg"
+                      alt=""
+                      width="1077"
+                    />
+                  </div>
+                  <div class="slider__item">
+                    <img
+                      class="slider__img"
+                      src="./images/Slider2.jpg"
+                      alt=""
+                      width="1077"
+                    />
+                  </div>
+                  <div class="slider__item">
+                    <img
+                      class="slider__img"
+                      src="./images/Slider3.jpg"
+                      alt=""
+                      width="1077"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+              <a
+                class="slider__control slider__control_prev"
+                href="#"
+                role="button"
+                data-slide="prev"
+                >Наза<br />д</a
+              >
+              <a
+                class="slider__control slider__control_next"
+                href="#"
+                role="button"
+                data-slide="next"
+                >Впере<br />д</a
+              >
+            </div>
+            <div class="hero-main-content">
+              <p class="hero-suptitle">A hair salon for men in Kyiv</p>
+              <h1 class="hero-title">BarberShop</h1>
+              <p class="hero-subtitle">
+                Мы эксперты в модных мужских стрижках.<br />
+                Работаем быстро, осторожно и со вкусом.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -243,18 +290,180 @@
               <img src="./images/img3.jpg" alt="" width="370" />
               <h3 class="masters-card-title">John Smith</h3>
               <p class="masters-card-description">Extreme Barber</p>
+
+              <ul class="masters-social-list list">
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="instagram"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="twitter"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="facebook"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="linkedin"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
 
             <li class="masters-item">
               <img src="./images/img4.jpg" alt="" width="370" />
               <h3 class="masters-card-title">Michele Doe</h3>
               <p class="masters-card-description">Extreme Barber</p>
+
+              <ul class="masters-social-list list">
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="instagram"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="twitter"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="facebook"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="linkedin"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
 
             <li class="masters-item">
               <img src="./images/img5.jpg" alt="" width="370" />
               <h3 class="masters-card-title">Alan Black</h3>
               <p class="masters-card-description">Extreme Barber</p>
+
+              <ul class="masters-social-list list">
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="instagram"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="twitter"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="facebook"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="masters-social-item">
+                  <a
+                    class="masters-social-link"
+                    href=""
+                    rel="nooperer noreferrer"
+                    aria-label="linkedin"
+                  >
+                    <svg class="masters-social-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -302,20 +511,35 @@
 
             <ul class="contacts-list list">
               <li class="contacts-item">
-                <a class="contacts-link link" href=""
-                  >ул. Васильковая, 7А Киев, 08132</a
+                <a class="contacts-link link" href="">
+                  <svg
+                    class="contacts-icon address-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/sprite.svg#map-pin"></use>
+                  </svg>
+                  ул. Васильковая, 7А<br />
+                  Киев, 08132</a
                 >
               </li>
               <li class="contacts-item">
-                <a class="contacts-link link" href="tel:+380441111111"
-                  >+38 044 111 11 11</a
+                <a class="contacts-link link" href="tel:+380441111111">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#phone"></use>
+                  </svg>
+                  +38 044 111 11 11</a
                 >
               </li>
               <li class="contacts-item">
                 <a
                   class="contacts-link contacts-mail link"
                   href="mailto:barbershop@email.com"
-                  >barbershop@email.com</a
+                >
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#mail"></use>
+                  </svg>
+                  barbershop@email.com</a
                 >
               </li>
             </ul>
@@ -351,5 +575,17 @@
         </ul>
       </div>
     </footer>
+    <script defer src="./js/slider.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // инициализация 1 слайдера с нужными настройками
+        new SimpleAdaptiveSlider('.slider', {
+          loop: true,
+          autoplay: true,
+          interval: 5000,
+          swipe: true,
+        });
+      });
+    </script>
   </body>
 </html>
