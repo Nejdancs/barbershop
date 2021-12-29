@@ -155,7 +155,7 @@ img {
 
 .site-nav-list {
   display: flex;
-  margin-left: 68px;
+  margin-left: 69px;
 }
 
 .site-nav-item:not(:last-child) {
@@ -182,7 +182,7 @@ img {
 }
 
 .primary-btn {
-  margin-right: 3px;
+  margin-right: 4px;
 
   color: #ffffff;
 }
@@ -204,7 +204,7 @@ img {
 .hero-social-sidebar {
   display: flex;
   align-items: flex-end;
-  width: 93px;
+  width: 97px;
   padding-bottom: 40px;
 }
 
@@ -256,6 +256,7 @@ img {
   position: relative;
   display: inline-block;
 
+  pointer-events: none;
   z-index: 3;
 }
 
@@ -596,7 +597,7 @@ img {
   background-image: url(../images/contacts.png);
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: 102% 100%;
+  background-position: 102% 50%;
 }
 
 .registration-contacts-inner {
@@ -632,6 +633,11 @@ img {
 .contacts-list {
   margin-bottom: 70px;
 }
+
+.contacts-item:first-child {
+  max-width: 230px;
+}
+
 .contacts-item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -655,6 +661,7 @@ img {
 }
 
 .contacts-icon {
+  flex-shrink: 0;
   margin-right: 16px;
   stroke: currentColor;
 }
@@ -669,6 +676,7 @@ img {
 }
 
 .contacts-suptitle {
+  display: inline-block;
   margin-bottom: 20px;
 
   color: var(--title-secondary);
