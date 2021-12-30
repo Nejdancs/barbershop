@@ -132,7 +132,9 @@
               >
             </div>
             <div class="hero-main-content">
-              <p class="hero-suptitle">A hair salon for men in Kyiv</p>
+              <p class="hero-suptitle section-suptitle">
+                A hair salon for men in Kyiv
+              </p>
               <h1 class="hero-title">BarberShop</h1>
               <p class="hero-subtitle">
                 Мы эксперты в модных мужских стрижках.<br />
@@ -178,61 +180,63 @@
 
       <!-- Price -->
       <section class="price section" id="price">
-        <div class="container">
-          <p class="section-suptitle price-suptitle">
-            Проведи время в компании лучших мастеров
-          </p>
-          <h2 class="section-title price-title">Услуги и цены</h2>
+        <div class="price-inner">
+          <div class="container">
+            <p class="section-suptitle price-suptitle">
+              Проведи время в компании лучших мастеров
+            </p>
+            <h2 class="section-title price-title">Услуги и цены</h2>
 
-          <div class="price-inner">
-            <ul class="price-list list">
-              <li class="price-item">
-                <p class="price-description">Мужская стрижка</p>
-                <p class="price-description">от 300 грн.</p>
-              </li>
+            <div class="price-list-wrap">
+              <ul class="price-list list">
+                <li class="price-item">
+                  <p class="price-description">Мужская стрижка</p>
+                  <p class="price-description">от 300 грн.</p>
+                </li>
 
-              <li class="price-item">
-                <p class="price-description">Стрижка бороды</p>
-                <p class="price-description">от 200 грн.</p>
-              </li>
+                <li class="price-item">
+                  <p class="price-description">Стрижка бороды</p>
+                  <p class="price-description">от 200 грн.</p>
+                </li>
 
-              <li class="price-item">
-                <p class="price-description">Стрижка усов</p>
-                <p class="price-description">от 200 грн.</p>
-              </li>
+                <li class="price-item">
+                  <p class="price-description">Стрижка усов</p>
+                  <p class="price-description">от 200 грн.</p>
+                </li>
 
-              <li class="price-item">
-                <p class="price-description">Бритье опасной бритвой</p>
-                <p class="price-description">от 200 грн.</p>
-              </li>
-            </ul>
+                <li class="price-item">
+                  <p class="price-description">Бритье опасной бритвой</p>
+                  <p class="price-description">от 200 грн.</p>
+                </li>
+              </ul>
 
-            <ul class="price-list list">
-              <li class="price-item">
-                <p class="price-description">Cтрижка у стажера</p>
-                <p class="price-description">от 50 грн.</p>
-              </li>
+              <ul class="price-list list">
+                <li class="price-item">
+                  <p class="price-description">Cтрижка у стажера</p>
+                  <p class="price-description">от 50 грн.</p>
+                </li>
 
-              <li class="price-item">
-                <p class="price-description">Стрижка под насадку</p>
-                <p class="price-description">от 200 грн.</p>
-              </li>
+                <li class="price-item">
+                  <p class="price-description">Стрижка под насадку</p>
+                  <p class="price-description">от 200 грн.</p>
+                </li>
 
-              <li class="price-item">
-                <p class="price-description">Детская стрижка (до 12 лет)</p>
-                <p class="price-description">от 300 грн.</p>
-              </li>
+                <li class="price-item">
+                  <p class="price-description">Детская стрижка (до 12 лет)</p>
+                  <p class="price-description">от 300 грн.</p>
+                </li>
 
-              <li class="price-item">
-                <p class="price-description">Камуфлирование седины</p>
-                <p class="price-description">от 200 грн.</p>
-              </li>
-            </ul>
+                <li class="price-item">
+                  <p class="price-description">Камуфлирование седины</p>
+                  <p class="price-description">от 200 грн.</p>
+                </li>
+              </ul>
+            </div>
+
+            <button class="price-btn main-btn primary-btn" type="button">
+              онлайн-запись
+            </button>
           </div>
-
-          <button class="price-btn main-btn primary-btn" type="button">
-            онлайн-запись
-          </button>
         </div>
       </section>
 
@@ -265,9 +269,7 @@
           </ul>
 
           <div class="reason-content-wrap">
-            <p class="section-suptitle reason-suptitle">
-              старая традиционная школа
-            </p>
+            <p class="section-suptitle">старая традиционная школа</p>
             <h2 class="section-title">Почему приходят именно к нам?</h2>
             <p class="section-subtitle">
               О нас говорят только хорошее. Но лучше 1 раз увидеть и
@@ -280,9 +282,7 @@
       <!-- Masters -->
       <section id="masters" class="masters section">
         <div class="container">
-          <p class="section-suptitle masters-suptitle">
-            для настоящих ценителей атмосферы
-          </p>
+          <p class="section-suptitle">для настоящих ценителей атмосферы</p>
           <h2 class="masters-title section-title">Наши мастера</h2>
 
           <ul class="masters-list list">
@@ -495,56 +495,58 @@
       </section>
 
       <!-- Registration & Contacts wraper-->
-      <div class="registration-contacts-wrapper">
-        <div class="registration-contacts-inner container">
-          <!-- Registration-->
-          <section class="registration">
-            <h2 class="section-title registration-title">Онлайн-запись</h2>
-            <button class="main-btn primary-btn" type="button">
-              отправить
-            </button>
-          </section>
+      <div class="reg-cont-fluid">
+        <div class="reg-cont-wrap">
+          <div class="reg-cont-container container">
+            <!-- Registration-->
+            <section class="registration">
+              <h2 class="section-title registration-title">Онлайн-запись</h2>
+              <button class="main-btn primary-btn" type="button">
+                отправить
+              </button>
+            </section>
 
-          <!-- Contacts -->
-          <section class="contacts" id="contacts">
-            <h2 class="section-title contacts-title">Контакты</h2>
+            <!-- Contacts -->
+            <section class="contacts" id="contacts">
+              <h2 class="section-title contacts-title">Контакты</h2>
 
-            <ul class="contacts-list list">
-              <li class="contacts-item">
-                <a class="contacts-link link" href="">
-                  <svg
-                    class="contacts-icon address-icon"
-                    width="24"
-                    height="24"
+              <ul class="contacts-list list">
+                <li class="contacts-item">
+                  <a class="contacts-link link" href="">
+                    <svg
+                      class="contacts-icon address-icon"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/sprite.svg#map-pin"></use>
+                    </svg>
+                    ул. Васильковая, 7А Киев, 08132</a
                   >
-                    <use href="./images/sprite.svg#map-pin"></use>
-                  </svg>
-                  ул. Васильковая, 7А Киев, 08132</a
-                >
-              </li>
-              <li class="contacts-item">
-                <a class="contacts-link link" href="tel:+380441111111">
-                  <svg class="contacts-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#phone"></use>
-                  </svg>
-                  +38 044 111 11 11</a
-                >
-              </li>
-              <li class="contacts-item">
-                <a
-                  class="contacts-link contacts-mail link"
-                  href="mailto:barbershop@email.com"
-                >
-                  <svg class="contacts-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#mail"></use>
-                  </svg>
-                  barbershop@email.com</a
-                >
-              </li>
-            </ul>
-            <b class="section-suptitle contacts-suptitle">время работы</b>
-            <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
-          </section>
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link link" href="tel:+380441111111">
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a
+                    class="contacts-link contacts-mail link"
+                    href="mailto:barbershop@email.com"
+                  >
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use href="./images/sprite.svg#mail"></use>
+                    </svg>
+                    barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+              <b class="section-suptitle contacts-suptitle">время работы</b>
+              <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
+            </section>
+          </div>
         </div>
       </div>
     </main>
@@ -555,7 +557,7 @@
         <ul class="footer-social-list list">
           <li class="footer-social-item">
             <a
-              class="footer-social link"
+              class="footer-social-link link"
               href=""
               target="_blank"
               rel="noopener noreferrer"
@@ -564,7 +566,7 @@
           </li>
           <li class="footer-social-item">
             <a
-              class="footer-social link"
+              class="footer-social-link link"
               href=""
               target="_blank"
               rel="noopener noreferrer"
