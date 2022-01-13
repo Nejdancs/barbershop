@@ -116,11 +116,17 @@ img {
   text-transform: uppercase;
 
   cursor: pointer;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.secondary-btn {
+  color: #303030;
 }
 
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
 }
 
 /* Line title  */
@@ -180,6 +186,8 @@ img {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+
+  transition: color 250ms linear;
 }
 
 .primary-btn {
@@ -237,6 +245,8 @@ img {
   line-height: 1.36;
   letter-spacing: 0.2em;
   white-space: nowrap;
+
+  transition: color 250ms linear;
 }
 
 .hero-social-link:hover,
@@ -291,6 +301,14 @@ img {
   letter-spacing: 0.02em;
 }
 
+.hero-title.animate__fadeInLeft {
+  animation-delay: 500ms;
+}
+
+.hero-subtitle.animate__fadeInLeft {
+  animation-delay: 1000ms;
+}
+
 /* Section about 
 ========================================== */
 
@@ -323,15 +341,6 @@ img {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-}
-
-.secondary-btn {
-  color: #303030;
-}
-
-.secondary-btn:hover,
-.secondary-btn:focus {
-  color: #ffffff;
 }
 
 /* section price 
@@ -563,6 +572,8 @@ img {
 
   color: #303030;
   background-color: #ffffff;
+
+  transition: color 250ms linear;
 }
 
 .masters-social-link:hover,
@@ -661,6 +672,8 @@ img {
   letter-spacing: 0.02em;
 
   vertical-align: middle;
+
+  transition: color 250ms linear;
 }
 
 .contacts-link:hover,
@@ -745,6 +758,7 @@ img {
 }
 .footer-social-link {
   color: #303030;
+  transition: color 250ms linear;
 }
 
 .footer-social-link:hover,

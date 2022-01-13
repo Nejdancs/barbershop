@@ -71,6 +71,8 @@
   text-align: right;
   letter-spacing: 0.1em;
   text-decoration: none;
+
+  transition: color 250ms linear;
 }
 
 .slider__control_show {
