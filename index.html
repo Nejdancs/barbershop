@@ -509,9 +509,42 @@
             <!-- Registration-->
             <section class="registration">
               <h2 class="section-title registration-title">Онлайн-запись</h2>
-              <button class="main-btn primary-btn" type="button">
-                отправить
-              </button>
+
+              <form class="form-registration">
+                <div class="form-registration-row">
+                  <label class="form-registration-field">
+                    <input
+                      class="form-registration-input"
+                      type="text"
+                      name="name"
+                      placeholder=" "
+                    />
+                    <span class="form-registration-label">Имя*</span>
+                  </label>
+
+                  <label class="form-registration-field">
+                    <input
+                      class="form-registration-input"
+                      type="tel"
+                      name="tel"
+                      placeholder=" "
+                    />
+                    <span class="form-registration-label">Телефон*</span>
+                  </label>
+                </div>
+                <label class="form-registration-field teaxtarea-field">
+                  <textarea
+                    class="form-registration-input form-registration-teaxtarea"
+                    name="comment"
+                    placeholder=" "
+                  ></textarea>
+                  <span class="form-registration-label">сообщение</span>
+                </label>
+
+                <button class="main-btn primary-btn" type="button">
+                  отправить
+                </button>
+              </form>
             </section>
 
             <!-- Contacts -->

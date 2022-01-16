@@ -12,7 +12,6 @@ font-family: 'Raleway', sans-serif; */
 }
 
 body {
-  position: relative;
   min-width: 1200px;
   font-family: var(--primary-ff);
   color: var(--primary-text-color);
@@ -627,10 +626,83 @@ img {
 
   padding-top: 130px;
   padding-bottom: 193px;
+  padding-right: 40px;
 }
 
 .registration-title {
+  margin-bottom: 44px;
+
   color: var(--title-secondary);
+}
+
+.form-registration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-registration-row {
+  display: flex;
+  margin-bottom: 44px;
+  width: 100%;
+}
+
+.form-registration-field {
+  position: relative;
+  flex-grow: 1;
+}
+
+.form-registration-field + .form-registration-field {
+  margin-left: 30px;
+}
+
+.form-registration-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: text;
+
+  transition: color 250ms linear, transform 250ms linear;
+}
+
+.form-registration-input {
+  height: 24px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  background-color: transparent;
+  color: #ffffff;
+  outline: none;
+
+  transition: border-color 250ms linear;
+}
+
+.form-registration-input:focus {
+  border-color: #ffffff;
+}
+
+.form-registration-input:focus + .form-registration-label,
+.form-registration-input:not(:placeholder-shown) + .form-registration-label {
+  color: #ffffff;
+  transform: translateY(-100%);
+}
+
+.teaxtarea-field {
+  display: block;
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.form-registration-teaxtarea {
+  resize: none;
+  height: 76px;
 }
 
 /* section contacts  
