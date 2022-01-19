@@ -855,6 +855,8 @@ img {
   height: 100vh;
 
   background-color: rgba(25, 28, 38, 0.4);
+
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .modal {
@@ -870,6 +872,12 @@ img {
 
   background-color: #191c26;
   box-shadow: 0 0 5px -1px #797979;
+
+  transition: transform 250ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
 }
 
 .is-hidden {
