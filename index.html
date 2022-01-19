@@ -55,7 +55,7 @@
           <a class="header-contact link" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button class="main-btn primary-btn" type="button">
+          <button class="main-btn primary-btn" type="button" data-modal-open>
             онлайн-запись
           </button>
         </div>
@@ -179,7 +179,7 @@
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="main-btn secondary-btn" type="button">
+            <button class="main-btn secondary-btn" type="button" data-modal-open2 >
               онлайн-запись
             </button>
           </div>
@@ -241,7 +241,7 @@
               </ul>
             </div>
 
-            <button class="price-btn main-btn primary-btn" type="button">
+            <button class="price-btn main-btn primary-btn" type="button" data-modal-open3>
               онлайн-запись
             </button>
           </div>
@@ -541,7 +541,7 @@
                   <span class="form-registration-label">сообщение</span>
                 </label>
 
-                <button class="main-btn primary-btn" type="button">
+                <button class="main-btn primary-btn" type="submit">
                   отправить
                 </button>
               </form>
@@ -617,6 +617,44 @@
         </ul>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <b class="Form-title">Онлайн-запись</b>
+
+        <form class="form" action="#">
+          <label class="form-field">
+            <input class="form-input" type="text" name="name" placeholder=" " required />
+            <span class="form-label">Имя*</span>
+          </label>
+
+          <form class="form" action="#">
+          <label class="form-field">
+            <input class="form-input" type="tel" name="tel" placeholder=" " required />
+            <span class="form-label">Телефон*</span>
+          </label>
+
+          <form class="form" action="#">
+          <label class="form-field">
+            <textarea  class="form-input" placeholder=" " name="comment"></textarea>
+            <span class="form-label">Cообщение</span>
+          </label>
+
+<button class="form-btn main-btn primary-btn" type="submit">
+                  отправить
+                </button>
+
+        </form>
+
+        <button class="modal-btn-close" type="button" aria-label="Закрыть" data-modal-close>
+          <svg class="btn-icon" width="10" height="10">
+            <use href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+      </div>
+    </div>
+
     <script defer src="./js/slider.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
@@ -624,9 +662,11 @@
           loop: true,
           autoplay: true,
           interval: 5000,
-          swipe: true,
+          swipe: false,
         });
       });
     </script>
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
