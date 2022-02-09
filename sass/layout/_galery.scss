@@ -3,11 +3,28 @@
 }
 
 .gallery-list {
-  display: flex;
-  margin: -15px;
+  margin-bottom: -30px;
 }
 
 .gallery-item {
-  width: calc(100% / 4 - 30px);
-  margin: 15px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .gallery-item {
+    width: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: calc(100% / 4 - 30px);
+  }
 }

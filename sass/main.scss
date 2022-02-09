@@ -8,6 +8,7 @@
 
 // Components
 @import './components/section-title';
+@import './components/mobile-menu';
 @import './components/main-btn';
 @import './components/line-title';
 @import './components/backdrop';
@@ -25,6 +26,3 @@
 @import './layout/registration';
 @import './layout/contacts';
 @import './layout/footer';
-
-// Vendors
-@import './vendors/Slider/slick';

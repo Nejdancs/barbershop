@@ -7,16 +7,19 @@
 }
 
 .masters-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  margin-bottom: -64px;
 }
+
 .masters-item {
-  width: calc(100% / 3 - 30px);
-  margin: 15px;
+  margin-bottom: 64px;
 
   text-align: center;
 }
+
+.masters-item img {
+  margin: 0 auto;
+}
+
 .masters-card-title {
   margin-top: 30px;
   margin-bottom: 8px;
@@ -59,13 +62,24 @@
   background-color: #ffffff;
 
   transition: color 250ms linear;
-}
-
-.masters-social-link:hover,
-.masters-social-link:focus {
-  color: #ff6c00;
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
 }
 
 .masters-social-icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .masters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .masters-item {
+    width: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
 }

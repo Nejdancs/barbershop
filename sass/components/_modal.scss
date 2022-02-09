@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 400px;
+  width: calc(100vw - 30px);
   min-height: 479px;
   border-radius: 4px;
   padding: 20px;
@@ -13,6 +13,16 @@
   box-shadow: 0 0 5px -1px #797979;
 
   transition: transform 250ms linear;
+
+  @media screen and (min-width: 430px) {
+    width: 400px;
+  }
+
+  @media screen and (max-height: 480px) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -35,12 +45,12 @@
   cursor: pointer;
 
   transition: 250ms linear;
-}
 
-.modal-btn-close:hover,
-.modal-btn-close:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
 .btn-icon {

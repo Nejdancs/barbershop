@@ -8,6 +8,7 @@
   height: 100vh;
 
   background-color: rgba(25, 28, 38, 0.4);
+  overflow-y: scroll;
 
   transition: opacity 250ms linear, visibility 250ms linear;
 }

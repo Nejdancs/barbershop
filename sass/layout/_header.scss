@@ -4,55 +4,125 @@
   left: 0;
 
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 40px;
   z-index: 10;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.site-nav-list {
-  display: flex;
-  margin-left: 69px;
+.logo-icon {
+  fill: #ffffff;
 }
 
-.site-nav-item:not(:last-child) {
-  margin-right: 40px;
+.burger-menu {
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 2.67px;
+
+  background-color: #ffffff;
+  box-shadow: 0 6.67px #ffffff, 0 -6.67px #ffffff;
 }
 
-.header-contact-wrap {
-  margin-left: auto;
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+  .header-contact-wrap {
+    display: none;
+  }
 }
 
-.header-contact {
-  margin-right: 40px;
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 34px;
+  }
+
+  .logo-icon {
+    fill: #303030;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  .site-nav {
+    margin-left: 69px;
+  }
+
+  .site-nav-list {
+    display: flex;
+  }
+
+  .site-nav-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .header-contact-wrap {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .site-nav-link,
+  .header-contact {
+    display: block;
+    padding: 10px 0;
+
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    transition: color 250ms linear;
+
+    &:focus,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .header-btn {
+    margin-right: 4px;
+  }
 }
 
-.site-nav-link,
-.header-contact {
-  padding: 10px 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-inner {
+    align-items: flex-start;
+  }
 
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
+  .site-nav {
+    padding-top: 9px;
+  }
+  .header-contact-wrap {
+    flex-direction: column-reverse;
+    padding-top: 6px;
+  }
 
-  transition: color 250ms linear;
+  .header-contact {
+    margin-top: 10px;
+  }
 }
 
-.primary-btn {
-  margin-right: 4px;
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
-  color: #ffffff;
-}
+  .site-nav {
+    padding-top: 0;
+  }
 
-.site-nav-link:hover,
-.header-contact:hover,
-.site-nav-link:focus,
-.header-contact:focus {
-  color: var(--accent-color);
+  .site-nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .header-contact {
+    margin-right: 40px;
+  }
 }

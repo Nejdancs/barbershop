@@ -15,16 +15,12 @@ $(function () {
       '<button class="slider__control slider__control_next" href="#" >Впере<br />д</button>',
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {},
-      },
-      {
-        breakpoint: 600,
-        settings: {},
-      },
-      {
-        breakpoint: 480,
-        settings: {},
+        breakpoint: 768,
+        settings: {
+          dots: false,
+          prevArrow: false,
+          nextArrow: false,
+        },
       },
     ],
   });

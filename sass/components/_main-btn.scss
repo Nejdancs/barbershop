@@ -15,14 +15,18 @@
 
   cursor: pointer;
   transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
+}
+
+.primary-btn {
+  color: #ffffff;
 }
 
 .secondary-btn {
   color: #303030;
-}
-
-.main-btn:hover,
-.main-btn:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
 }

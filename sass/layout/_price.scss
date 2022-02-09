@@ -44,10 +44,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.price-item:not(:last-child) {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .price-description {
@@ -58,23 +58,23 @@
   line-height: 2.14;
   letter-spacing: 0.02em;
 
+  &:first-child {
+    flex-grow: 1;
+    align-items: baseline;
+  }
+
+  &:first-child:after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    margin-right: 6px;
+    margin-left: 6px;
+    background: rgba(157, 164, 189, 0.12);
+  }
+
   @media screen and (max-width: 376px) {
     font-size: 11px;
   }
-}
-
-.price-description:first-child {
-  flex-grow: 1;
-  align-items: baseline;
-}
-
-.price-description:first-child:after {
-  content: '';
-  flex-grow: 1;
-  height: 1px;
-  margin-right: 6px;
-  margin-left: 6px;
-  background: rgba(157, 164, 189, 0.12);
 }
 
 .price-btn {

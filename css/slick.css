@@ -118,7 +118,7 @@
 /* Индикаторы */
 .slick-dots {
   position: absolute;
-  right: 52px;
+  right: 37px;
   bottom: 50%;
   display: flex;
   flex-direction: column;
@@ -128,6 +128,12 @@
   transform: translateY(100%);
   list-style: none;
   user-select: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .slick-dots {
+    right: 52px;
+  }
 }
 
 .slick-dots li {
@@ -183,15 +189,27 @@ li.slick-active {
 
 .slider__control_prev {
   justify-content: flex-start;
-  left: 885px;
+  right: 118px;
   text-align: left;
   z-index: 100;
 }
 
+@media screen and (min-width: 1200px) {
+  .slider__control_prev {
+    right: 130px;
+  }
+}
+
 .slider__control_next {
   justify-content: flex-end;
-  right: 49px;
+  right: 37px;
   text-align: right;
+}
+
+@media screen and (min-width: 1200px) {
+  .slider__control_next {
+    right: 48px;
+  }
 }
 
 .slider__control::before {
