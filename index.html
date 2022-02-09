@@ -24,12 +24,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./css/slider.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- page header  -->
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="header-inner container">
         <a class="logo" href="./index.html"
           ><img src="./images/Logo.svg" alt="Логотип"
@@ -60,11 +60,11 @@
           </button>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- section hero -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero-inner container">
           <div class="hero-social-sidebar">
             <ul class="hero-social-list list">
@@ -91,49 +91,32 @@
 
           <div class="hero-main">
             <div class="slider">
-              <div class="slider__wrapper">
-                <div class="slider__items">
-                  <div class="slider__item">
-                    <img
-                      class="slider__img"
-                      src="./images/hero.jpg"
-                      alt=""
-                      width="1073"
-                    />
-                  </div>
-                  <div class="slider__item">
-                    <img
-                      class="slider__img"
-                      src="./images/Slider2.jpg"
-                      alt=""
-                      width="1073"
-                    />
-                  </div>
-                  <div class="slider__item">
-                    <img
-                      class="slider__img"
-                      src="./images/Slider3.jpg"
-                      alt=""
-                      width="1073"
-                    />
-                  </div>
+              <div class="slider__items">
+                <div class="slider__item">
+                  <img
+                    class="slider__img"
+                    src="./images/hero.jpg"
+                    alt=""
+                    width="1073"
+                  />
+                </div>
+                <div class="slider__item">
+                  <img
+                    class="slider__img"
+                    src="./images/Slider2.jpg"
+                    alt=""
+                    width="1073"
+                  />
+                </div>
+                <div class="slider__item">
+                  <img
+                    class="slider__img"
+                    src="./images/Slider3.jpg"
+                    alt=""
+                    width="1073"
+                  />
                 </div>
               </div>
-              <!-- Стрелки для перехода к предыдущему и следующему слайду -->
-              <a
-                class="slider__control slider__control_prev"
-                href="#"
-                role="button"
-                data-slide="prev"
-                >Наза<br />д</a
-              >
-              <a
-                class="slider__control slider__control_next"
-                href="#"
-                role="button"
-                data-slide="next"
-                >Впере<br />д</a
-              >
             </div>
             <div class="hero-main-content">
               <p
@@ -151,24 +134,54 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- About -->
-      <section class="about" id="about">
+      <section class="section about" id="about">
         <div class="about-inner container">
           <ul class="about-list list">
             <li class="about-item">
-              <img src="./images/img1.jpg" alt="" width="270" />
+              <picture
+                ><source
+                  srcset="
+                    ./images/about/about-desk-1.jpg    1x,
+                    ./images/about/about-desk-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/about/about-tab-1.jpg    1x,
+                    ./images/about/about-tab-1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <img src="#" alt=""
+              /></picture>
             </li>
             <li class="about-item">
-              <img src="./images/img2.jpg" alt="" width="270" />
+              <picture
+                ><source
+                  srcset="
+                    ./images/about/about-desk-2.jpg    1x,
+                    ./images/about/about-desk-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/about/about-tab-2.jpg    1x,
+                    ./images/about/about-tab-2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <img src="#" alt=""
+              /></picture>
             </li>
           </ul>
 
           <div class="about-content-wrap">
             <p class="section-suptitle about-suptitle">О НАС</p>
-            <h2 class="section-title">Лучший Барбершоп твоего города</h2>
-            <p class="section-subtitle">
+            <h2 class="section-title about-title">
+              Лучший Барбершоп твоего города
+            </h2>
+            <p class="section-subtitle about-subtitle">
               Если ты хочешь добавить в свой образ больше уверенности – тебе
               точно к нам.
             </p>
@@ -179,7 +192,11 @@
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="main-btn secondary-btn" type="button" data-modal-open2 >
+            <button
+              class="main-btn secondary-btn"
+              type="button"
+              data-modal-open2
+            >
               онлайн-запись
             </button>
           </div>
@@ -241,7 +258,11 @@
               </ul>
             </div>
 
-            <button class="price-btn main-btn primary-btn" type="button" data-modal-open3>
+            <button
+              class="price-btn main-btn primary-btn"
+              type="button"
+              data-modal-open3
+            >
               онлайн-запись
             </button>
           </div>
@@ -249,8 +270,17 @@
       </section>
 
       <!-- Section reason -->
-      <section class="reason">
+      <section class="reason section">
         <div class="reason-inner container">
+          <div class="reason-content-wrap">
+            <p class="section-suptitle">старая традиционная школа</p>
+            <h2 class="section-title">Почему приходят именно к нам?</h2>
+            <p class="section-subtitle reason-subtitle">
+              О нас говорят только хорошее. Но лучше 1 раз увидеть и
+              прочувствовать, чем 10 раз прочитать.
+            </p>
+          </div>
+
           <ul class="reason-list list">
             <li class="reason-item">
               <span class="reason-digit">600</span>
@@ -275,20 +305,11 @@
               <p class="reason-text">Подарков постоянным клиентам</p>
             </li>
           </ul>
-
-          <div class="reason-content-wrap">
-            <p class="section-suptitle">старая традиционная школа</p>
-            <h2 class="section-title">Почему приходят именно к нам?</h2>
-            <p class="section-subtitle">
-              О нас говорят только хорошее. Но лучше 1 раз увидеть и
-              прочувствовать, чем 10 раз прочитать.
-            </p>
-          </div>
         </div>
       </section>
 
       <!-- Masters -->
-      <section id="masters" class="masters section">
+      <!-- <section id="masters" class="masters section">
         <div class="container">
           <p class="section-suptitle">для настоящих ценителей атмосферы</p>
           <h2 class="masters-title section-title">Наши мастера</h2>
@@ -475,10 +496,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Gallery -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container">
           <h2 hidden>Галерея</h2>
           <p class="gallery-suptitle section-suptitle">
@@ -500,14 +521,14 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Registration & Contacts wraper-->
-      <div class="reg-cont-fluid">
+      <!-- <div class="reg-cont-fluid">
         <div class="reg-cont-wrap">
-          <div class="reg-cont-container container">
-            <!-- Registration-->
-            <section class="registration">
+          <div class="reg-cont-container container"> -->
+      <!-- Registration-->
+      <!-- <section class="registration">
               <h2 class="section-title registration-title">Онлайн-запись</h2>
 
               <form class="form-registration">
@@ -545,10 +566,10 @@
                   отправить
                 </button>
               </form>
-            </section>
+            </section> -->
 
-            <!-- Contacts -->
-            <section class="contacts" id="contacts">
+      <!-- Contacts -->
+      <!-- <section class="contacts" id="contacts">
               <h2 class="section-title contacts-title">Контакты</h2>
 
               <ul class="contacts-list list">
@@ -589,9 +610,9 @@
             </section>
           </div>
         </div>
-      </div>
+      </div> -->
     </main>
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="page-footer-inner container">
         <p class="copyright">&copy; Copyright 2020</p>
 
@@ -616,57 +637,68 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <b class="Form-title">Онлайн-запись</b>
 
         <form class="form" action="#">
           <label class="form-field">
-            <input class="form-input" type="text" name="name" placeholder=" " required />
+            <input
+              class="form-input"
+              type="text"
+              name="name"
+              placeholder=" "
+              required
+            />
             <span class="form-label">Имя*</span>
           </label>
 
-          <form class="form" action="#">
           <label class="form-field">
-            <input class="form-input" type="tel" name="tel" placeholder=" " required />
+            <input
+              class="form-input"
+              type="tel"
+              name="tel"
+              placeholder=" "
+              required
+            />
             <span class="form-label">Телефон*</span>
           </label>
 
-          <form class="form" action="#">
           <label class="form-field">
-            <textarea  class="form-input" placeholder=" " name="comment"></textarea>
+            <textarea
+              class="form-input"
+              placeholder=" "
+              name="comment"
+            ></textarea>
             <span class="form-label">Cообщение</span>
           </label>
 
-<button class="form-btn main-btn primary-btn" type="submit">
-                  отправить
-                </button>
-
+          <button class="form-btn main-btn primary-btn" type="submit">
+            отправить
+          </button>
         </form>
 
-        <button class="modal-btn-close" type="button" aria-label="Закрыть" data-modal-close>
+        <button
+          class="modal-btn-close"
+          type="button"
+          aria-label="Закрыть"
+          data-modal-close
+        >
           <svg class="btn-icon" width="10" height="10">
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
-
       </div>
     </div>
 
-    <script defer src="./js/slider.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        new SimpleAdaptiveSlider('.slider', {
-          loop: true,
-          autoplay: true,
-          interval: 5000,
-          swipe: false,
-        });
-      });
-    </script>
-    <script src="./js/modal.js"></script>
-
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script src="./js/modal.js"></script> -->
   </body>
 </html>

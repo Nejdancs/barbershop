@@ -1,0 +1,32 @@
+.section-suptitle {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  color: var(--title-primary);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-bottom: 20px;
+
+  font-family: var(--secondary-ff);
+  color: var(--title-primary);
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.section-subtitle {
+  margin-bottom: 20px;
+
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}

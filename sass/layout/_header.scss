@@ -1,0 +1,58 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-list {
+  display: flex;
+  margin-left: 69px;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-contact-wrap {
+  margin-left: auto;
+}
+
+.header-contact {
+  margin-right: 40px;
+}
+
+.site-nav-link,
+.header-contact {
+  padding: 10px 0;
+
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  transition: color 250ms linear;
+}
+
+.primary-btn {
+  margin-right: 4px;
+
+  color: #ffffff;
+}
+
+.site-nav-link:hover,
+.header-contact:hover,
+.site-nav-link:focus,
+.header-contact:focus {
+  color: var(--accent-color);
+}

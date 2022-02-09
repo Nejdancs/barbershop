@@ -1,0 +1,10 @@
+.footer-social-item:first-child::before,
+.hero-social-item:first-child::before,
+.section-suptitle::before {
+  content: '';
+  margin-right: 20px;
+  height: 1px;
+  width: 60px;
+
+  background: currentColor;
+}

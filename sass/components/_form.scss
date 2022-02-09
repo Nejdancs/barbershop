@@ -1,0 +1,94 @@
+.form {
+  text-align: center;
+}
+
+.Form-title {
+  display: block;
+  margin-bottom: 44px;
+
+  font-family: var(--secondary-ff);
+  color: var(--title-secondary);
+  font-size: 30px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.form-field {
+  position: relative;
+  display: block;
+
+  margin-bottom: 40px;
+}
+
+.form-input {
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+
+  border: 1px solid rgba(157, 164, 189, 0.4);
+  border-radius: 30px;
+
+  background-color: #191c26;
+  color: #9da4bd;
+  text-align: center;
+  outline: none;
+
+  transition: width 250ms linear, border-color 250ms linear;
+}
+
+.form-input:-webkit-autofill {
+  box-shadow: inset 0 0 0 100px #191c26;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: text;
+
+  transition: transform 250ms linear, color 250ms linear;
+}
+
+.form-input:not(:placeholder-shown),
+.form-input:focus {
+  width: 100%;
+  border-color: var(--accent-color);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-50%, -50px);
+  color: #ffffff;
+}
+
+textarea.form-input {
+  padding: 10px 20px;
+
+  resize: none;
+
+  transition: height 250ms linear;
+}
+
+textarea.form-input:not(:placeholder-shown),
+textarea.form-input:focus {
+  height: 86px;
+}
+
+textarea.form-input:focus + .form-label,
+textarea.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(-50%, -69px);
+}
+
+.form-btn {
+  width: 200px;
+  height: 50px;
+}

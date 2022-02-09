@@ -1,0 +1,30 @@
+// Utils
+@import './utils/variables';
+@import './utils/is-hidden';
+
+// Base
+@import './base/common';
+@import './base/container';
+
+// Components
+@import './components/section-title';
+@import './components/main-btn';
+@import './components/line-title';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/form';
+
+// Layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/price';
+@import './layout/reason';
+@import './layout/masters';
+@import './layout/galery';
+@import './layout/registration';
+@import './layout/contacts';
+@import './layout/footer';
+
+// Vendors
+@import './vendors/Slider/slick';

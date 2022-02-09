@@ -1,0 +1,132 @@
+.price {
+  padding: 0;
+  background-color: #111319;
+}
+
+.price-inner {
+  padding-bottom: 84px;
+  padding-top: 84px;
+
+  background-image: url(../images/price-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: (192dpi)),
+    (min-resolution: (2dppx)) {
+    background-image: url(../images/price-bg@2x.png);
+  }
+}
+
+.price-suptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.price-title {
+  margin-bottom: 44px;
+
+  color: #ffffff;
+}
+
+.price-list-wrap {
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1199px) {
+    padding: 30px 40px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 30px;
+  }
+}
+
+.price-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.price-description {
+  display: flex;
+
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+
+  @media screen and (max-width: 376px) {
+    font-size: 11px;
+  }
+}
+
+.price-description:first-child {
+  flex-grow: 1;
+  align-items: baseline;
+}
+
+.price-description:first-child:after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  margin-right: 6px;
+  margin-left: 6px;
+  background: rgba(157, 164, 189, 0.12);
+}
+
+.price-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .price-list-wrap {
+    background-image: linear-gradient(
+      180deg,
+      #171a24 0%,
+      rgba(23, 26, 36, 0.2) 100%
+    );
+  }
+  .price-list:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .price-inner {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .price-description {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .price-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 130px;
+    padding-top: 130px;
+  }
+
+  .price-list-wrap {
+    display: flex;
+  }
+
+  .price-list {
+    padding: 30px 40px;
+    width: 50%;
+
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  .price-list:last-child {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}

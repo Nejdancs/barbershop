@@ -1,0 +1,28 @@
+.main-btn {
+  min-width: 160px;
+  padding: 12px 20px;
+  border: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.secondary-btn {
+  color: #303030;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}

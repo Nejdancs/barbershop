@@ -1,0 +1,71 @@
+.masters {
+  background: #f7f7f7;
+}
+
+.masters-title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+.masters-item {
+  width: calc(100% / 3 - 30px);
+  margin: 15px;
+
+  text-align: center;
+}
+.masters-card-title {
+  margin-top: 30px;
+  margin-bottom: 8px;
+
+  color: var(--title-primary);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+}
+
+.masters-card-description {
+  margin-bottom: 30px;
+
+  color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+}
+
+.masters-social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.masters-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.masters-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: #303030;
+  background-color: #ffffff;
+
+  transition: color 250ms linear;
+}
+
+.masters-social-link:hover,
+.masters-social-link:focus {
+  color: #ff6c00;
+}
+
+.masters-social-icon {
+  fill: currentColor;
+}
