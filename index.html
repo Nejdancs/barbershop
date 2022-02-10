@@ -45,7 +45,7 @@
           type="button"
         ></button>
 
-        <nav class="site-nav">
+        <nav class="header-site-nav site-nav">
           <ul class="site-nav-list list">
             <li class="site-nav-item">
               <a class="site-nav-link link" href="#about">О нас</a>
@@ -61,10 +61,8 @@
             </li>
           </ul>
         </nav>
-        <div class="header-contact-wrap">
-          <a class="header-contact link" href="tel:+380441111111"
-            >+38 044 111 11 11</a
-          >
+        <div class="header-contact-wrap contact-wrap">
+          <a class="contact link" href="tel:+380441111111">+38 044 111 11 11</a>
           <button
             class="header-btn main-btn primary-btn"
             type="button"
@@ -78,14 +76,67 @@
 
     <main>
       <div class="mobile-menu js-menu-container" id="mobile-menu">
-        <button
-          class="mobile-menu__menu-toggle menu-toggle js-close-menu"
-          aria-label="Закрытие мобильного меню"
-        >
-          <svg class="" width="40" height="40">
-            <use href="./images/sprite.svg#close-mobile-menu"></use>
-          </svg>
-        </button>
+        <div class="mobile-menu-container">
+          <button
+            type="button"
+            class="mobile-menu-close js-close-menu"
+            aria-label="Закрытие мобильного меню"
+          >
+            <svg width="40" height="40">
+              <use href="./images/sprite.svg#close-mobile-menu"></use>
+            </svg>
+          </button>
+
+          <nav class="site-nav">
+            <ul class="site-nav-list list">
+              <li class="site-nav-item">
+                <a class="site-nav-link link" href="#about">О нас</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link link" href="#price">Услуги и цены</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link link" href="#masters">Мастера</a>
+              </li>
+              <li class="site-nav-item">
+                <a class="site-nav-link link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contact-wrap">
+            <a class="contact link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <button
+              class="mobile-menu-btn main-btn secondary-btn"
+              type="button"
+              data-modal-open
+            >
+              онлайн-запись
+            </button>
+          </div>
+
+          <ul class="hero-social-list list">
+            <li class="hero-social-item">
+              <a
+                class="hero-social-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="hero-social-item">
+              <a
+                class="hero-social-link link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- section hero -->
@@ -962,6 +1013,12 @@
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
