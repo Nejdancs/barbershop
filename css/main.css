@@ -442,7 +442,7 @@ textarea.form-input:not(:placeholder-shown) + .form-label {
     margin-bottom: 64px;
   }
   .contact {
-    margin-bottom: 24px;
+    margin-bottom: 14px;
   }
 }
 
