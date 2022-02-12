@@ -226,6 +226,9 @@ img {
   top: 0;
   left: 0;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: rgba(25, 28, 38, 0.4);
@@ -234,10 +237,7 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   width: calc(100vw - 30px);
   min-height: 479px;
   border-radius: 4px;
@@ -255,14 +255,12 @@ img {
 
 @media screen and (max-height: 480px) {
   .modal {
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
+    align-self: flex-start;
   }
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleY(0);
+  transform: scaleY(0);
 }
 
 .modal-btn-close {
